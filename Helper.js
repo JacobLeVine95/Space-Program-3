@@ -121,7 +121,7 @@ function MCL(){
     fullName = firstName + " " + lastName;
 //These prompts ask for the first and last name
     while(fullName.length > 20){
-        prompt("Please re-enter less than 20 characters."); 
+        alert("Please re-enter less than 20 characters."); 
 //This while statement loops the function so that if the concatenated name is >20, it will give a warning to re-enter.
         firstName = prompt("First name:");
     lastName = prompt("Last name:");
@@ -130,7 +130,7 @@ function MCL(){
 
     badgeNumber = prompt("Badge number:");
     //This prompt asks for badge number
-    while(badgeNumberStr > 1000){
-        prompt("Please input a 3 digit code."); //This while statement will give an alert asking for a 3-digit code if you put 4 digits or more in.
+    while(badgeNumber > 1000){
+       badgeNumber = prompt("Please input a 3 digit code."); //This while statement will give an alert asking for a 3-digit code if you put 4 digits or more in.
     }
 }
